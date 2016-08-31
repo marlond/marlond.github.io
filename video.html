@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <title>asdas</title>
+</head>
+<body>
+	<iframe width="560" height="315" src="" frameborder="0" allowfullscreen id="video"></iframe>
+  <br />
+	<button onclick="javascript:proximo();">
+	  Próximo vídeo
+	</button>
+
+<script type="text/javascript">
+/*var youtube = {
+//javascript:youtube.proximo();
+  videos: ['https://www.youtube.com/v/sGbxmsDFVnE', 'https://www.youtube.com/v/tmeOjFno6Do', 'https://www.youtube.com/v/OMOVFvcNfvE'],
+  atual: -1,
+
+  init: function() {
+    youtube.total = youtube.videos.length;
+    youtube.proximo();
+  },
+
+  proximo: function() {
+    youtube.atual++;
+    document.getElementById('video').src = youtube.videos[youtube.atual];
+  }
+
+}
+youtube.init();*/
+var sites = ['https://www.youtube.com/v/sGbxmsDFVnE', 'https://www.youtube.com/v/tmeOjFno6Do', 'https://www.youtube.com/v/OMOVFvcNfvE'];
+var atual = 0;
+var total = sites.length;
+function proximo() {
+  document.getElementById('video').src = sites[atual];
+  atual++;
+}  
+</script>
+</body>
+</html>
